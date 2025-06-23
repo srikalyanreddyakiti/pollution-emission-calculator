@@ -1,0 +1,78 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Motor Carbon Emissions Calculator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      h1 {
+        color: #333;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #333;
+      }
+
+      input[type="text"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      input[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 18px;
+        color: #fff;
+        background-color: #333;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Motor Carbon Emissions Calculator</h1>
+    <form method="post" action="/">
+      <label for="power_rating">Power rating of the motor (kW):</label>
+      <input type="text" id="power_rating" name="power_rating">
+
+      <label for="hours_of_use">Number of hours the motor was in use:</label>
+      <input type="text" id="hours_of_use" name="hours_of_use">
+
+      <label for="emissions_intensity">Emissions intensity of the grid (kg CO2e per kWh):</label>
+      <input type="text" id="emissions_intensity" name="emissions_intensity">
+
+      <input type="submit" value="Calculate emissions">
+    </form>
+  </body>
+</html>

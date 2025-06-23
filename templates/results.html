@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Motor Carbon Emissions Calculator - Results</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      h1 {
+        color: #333;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .result {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #333;
+      }
+
+      p {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .emissions {
+        color: #ff5a5f;
+        font-weight: bold;
+      }
+
+      .credits {
+        color: #4dc3b6;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Motor Carbon Emissions Calculator</h1>
+    <div class="result">
+      <p>Total carbon emissions: <span class="emissions">{{ total_emissions }} kg CO2e</span></p>
+      <p>Carbon credits generated: <span class="credits">{{ carbon_credits }}</span></p>
+    </div>
+  </body>
+</html>
